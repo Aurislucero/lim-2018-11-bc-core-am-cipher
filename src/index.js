@@ -1,82 +1,35 @@
-function cifradoAscii(textPrincipal,offset){
-    var acum ='';
-    for(i=0;i<textPrincipal.length;i++){
-        let numAscii=textPrincipal.charCodeAt(i);
 
-         if (numAscii===32){
-         acum = acum + String.fromCharCode(numAscii);
-         }
-         else if(numAscii>=65 && numAscii<=90){
-            const numDiferentMayusc = (textPrincipal.charCodeAt(i)-65+parseInt(offset))%26+65;
-
-            acum = acum + String.fromCharCode(numDiferentMayusc );
-          }
-          else if(numAscii>=97 && numAscii<=122){
-             const numDiferentMinusc = ((textPrincipal.charCodeAt(i)-97 + parseInt(offset))%26+97)-32;
-             acum = acum + String.fromCharCode(numDiferentMinusc);
-           }
-         else {
-            alert('escribe un mensaje :)');
-         }
-
-    }
-    return acum;
-
-}
-
-function decifradoAscii(textPrincipal,offset){
-  var acum ='';
-  for(i=0;i<textPrincipal.length;i++){
-      let numAscii=textPrincipal.charCodeAt(i);
-
-       if (numAscii===32){
-       acum = acum + String.fromCharCode(numAscii);
-       }
-       else if(numAscii>=65 && numAscii<=90){
-          const numDiferentMayusc = (textPrincipal.charCodeAt(i)-90-parseInt(offset))%26+90;
-
-          acum = acum + String.fromCharCode(numDiferentMayusc );
-        }
-        else if(numAscii>=97 && numAscii<=122){
-           const numDiferentMinusc = ((textPrincipal.charCodeAt(i)-122 - parseInt(offset))%26+122)-32;
-           acum = acum + String.fromCharCode(numDiferentMinusc);
-         }
-       else {
-          alert('escribe un mensaje :)');
-       }
-
-  }
-  return acum;
-
-}
-
-
-//traer el boton para cifrar y la caja donde se colocara el mensaje
+//traer el boton para cifrar,decifrar y para el botón siguiente
 const botonCifrar= document.getElementById('btn-cifrar');
-const msjCifradoDecifrado=document.getElementById('msj-cifradoDecifrado');
 const botonDecifrar=document.getElementById('btn-decifrar');
 const botonSiguiente= document.getElementById('btn-siguiente');
-
+//traer la caja de texto para el  mensaje decifrado
+const msjCifrado=document.getElementById('msj-cifrado');
+const msjDecifrado=document.getElementById('msj-decifrado');
+//realizar el evento del boton siguiente
 botonSiguiente.addEventListener('click',()=>{
 
+
+  document.getElementById("pantalla1").style.display='none';
+  document.getElementById("pantalla2").style.display='block';
 })
-//hacer la funcion del cifrado al hacer click en el botón
-botonCifrar.addEventListener('click',cifrado);
-function cifrado(){
+//realizar el evento para cifrar al hacer click en el botón
+botonCifrar.addEventListener('click',()=>{
+  document.getElementById("pantalla2").style.display='none';
+  document.getElementById("pantalla3").style.display='block';
   const  msjPrincipal=document.getElementById('msj-principal').value;
   const  numSecreto=document.getElementById('num-secreto').value;
-
-  msjCifradoDecifrado.innerHTML=cifradoAscii(msjPrincipal,numSecreto);
+  msjCifrado.innerHTML=cipher.encode(msjPrincipal,numSecreto);
   document.getElementById('msj-principal').value='';
   document.getElementById('num-secreto').value='';
-
-}
-botonDecifrar.addEventListener('click',decifrado);
-function decifrado(){
+});
+//realizar el evento para decifrar al hacer click en el botón
+botonDecifrar.addEventListener('click', () =>{
+  document.getElementById("pantalla2").style.display='none';
+  document.getElementById("pantalla4").style.display='block';
 const  msjPrincipal=document.getElementById('msj-principal').value;
 const  numSecreto=document.getElementById('num-secreto').value;
-
-msjCifradoDecifrado.innerHTML=decifradoAscii(msjPrincipal,numSecreto);
+msjDecifrado.innerHTML=cipher.decode(msjPrincipal,numSecreto);
 document.getElementById('msj-principal').value='';
 document.getElementById('num-secreto').value='';
-}
+});

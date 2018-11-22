@@ -1,0 +1,13 @@
+#pantalla1{
+  background-color:   ;
+}
+#btn-siguiente{
+  color: red;
+  background-color: blue;
+  border-radius: 6px;
+
+}
+#btn-siguiente:hover{
+  background-color: green;
+  color: white;
+}
