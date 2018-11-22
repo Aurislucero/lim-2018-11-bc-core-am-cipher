@@ -1,13 +1,35 @@
 #pantalla1{
-  background-color:   ;
+  position: relative;
+   -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+   -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+   padding: 10px;
+   background: white;
 }
 #btn-siguiente{
-  color: red;
-  background-color: blue;
-  border-radius: 6px;
-
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: #7DCEA0  ;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
 }
 #btn-siguiente:hover{
-  background-color: green;
+  background-color: #2ECC71  ;
   color: white;
+body{
+  background-image:
+  margin:600px;
+}
+
+}
+img{
+  width=200px;
+  height: auto:
 }
