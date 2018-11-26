@@ -19,7 +19,7 @@ const cifradoAscii =(textPrincipal,offset)=>{
          }
   }
   return acum;
-  }
+};
 const decifradoAscii=(textPrincipal,offset)=>{
   var acum ='';
   for(i=0;i<textPrincipal.length;i++){
@@ -42,7 +42,7 @@ const decifradoAscii=(textPrincipal,offset)=>{
   }
   return acum;
 
-}
+};
 
 window.cipher = {
 encode : cifradoAscii,
