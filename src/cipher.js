@@ -13,7 +13,6 @@ const cifradoAscii =(textPrincipal,offset)=>{
         else if(numAscii>=97 && numAscii<=122){
       const numDiferentMinusc = ((textPrincipal.charCodeAt(i)-97 + parseInt(offset))%26+97)-32;
            acum = acum + String.fromCharCode(numDiferentMinusc);
-
          }
   }
   return acum;

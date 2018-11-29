@@ -19,5 +19,5 @@ const  msjPrincipal=document.getElementById('msj-principal').value;
 const  numSecreto=document.getElementById('num-secreto').value;
 msjResult.innerHTML=cipher.decode(msjPrincipal,numSecreto);
 document.getElementById('msj-principal').value='';
-dsocument.getElementById('num-secreto').value='';
+document.getElementById('num-secreto').value='';
 });

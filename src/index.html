@@ -9,31 +9,42 @@
 <body>
   <div class="header">
    <h1> CHISME SECRETO</h1>
+ </div>
+
+  <div class="sub">
+    <p >Deseas contar o descubrir ese chisme
+    y no quieres que se enteren,estas en el lugar correcto,solo debes seguir estos pasos:</p>
   </div>
-<div class="section">
+
   <div class="mensaje-entrada">
-        <p >Deseas contar o descubrir ese chisme
-        y no quieres que se enteren,estas en el lugar correcto,solo debes seguir estos pasos:</p>
+
         <li>primero debes colocar el chisme secreto </li>
         <li>segundo debes colocar el número secreto </li>
         <li>Por ultimo escoge cualquiera de los dos botones</li>
       </div>
-      <div>
-          <label for="msj-principal"> escribe tu chisme aqui</label>
-          <br>
-          <textarea type="text" id="msj-principal"></textarea>
-      </div>
-      <div >
-        <label for="num-secreto">escribe tu numero secreto</label>
-        <br>
-        <input type="number" id="num-secreto">
-        <br>
-        <button type="button" id="btn-cifrar">cifrar</button>
-        <button type="button" id="btn-decifrar">decifrar</button>
-        <p id="tu-mensaje">tu mensaje es</p>
-        <p id="resultado"></p>
-      </div>
+<div class="caja">
+  <div>
+      <label class="chisme" for="msj-principal"> escribe tu chisme aqui </label>
+      <br>
+      <br>
+      <textarea type="text" id="msj-principal"></textarea>
+  </div>
+  <div >
+    <p class="chisme" for="num-secreto">escribe tu numero secreto</p>
+    <input type="number" id="num-secreto">
+    <br>
+    <br>
+    <div class="">
+      <button type="button" id="btn-cifrar">cifrar</button>
+      <button type="button" id="btn-decifrar">decifrar</button>
+    </div>
+    <div class="muestraResultado">
+      <p id="tu-mensaje">tu mensaje es </p>
+      <span id="resultado"></span>
+    </div>
 
+
+</div>
 </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
