@@ -5,51 +5,36 @@
     <title>CIFRADO ASCII</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-<div id='pantalla1'  >
-<p>¡CHISME SECRETO!</p>
-<p>Deseas contar o descubrir ese chisme
-y no quieres que se enteren,estas en el lugar correcto,solo debes seguir estos pasos:</p>
-<li>primero debes colocar el chisme secreto </li>
-<li>segundo debes colocar el número secreto s</li>
-<li>Por ultimo escoge cualquiera de los dos botones</li>
-<button type='button' id='btn-siguiente'>AQUI VAMOS</button>
-<img src="" alt="">
-</div>
-<div id="pantalla2" style="display:none" >
-  <div >
-    <form >
-      <label for='msj-principal'>escribe tu chisme aqui</label>
-      <input type='text' id='msj-principal'>
-  </form>
-  <form >
-    <label for='numero'>escribe tu numero secreto</label>
-    <input type='number'id='num-secreto'>
-  </form>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <div class="header">
+   <h1> CHISME SECRETO</h1>
   </div>
+<div class="section">
+  <div class="mensaje-entrada">
+        <p >Deseas contar o descubrir ese chisme
+        y no quieres que se enteren,estas en el lugar correcto,solo debes seguir estos pasos:</p>
+        <li>primero debes colocar el chisme secreto </li>
+        <li>segundo debes colocar el número secreto </li>
+        <li>Por ultimo escoge cualquiera de los dos botones</li>
+      </div>
+      <div>
+          <label for="msj-principal"> escribe tu chisme aqui</label>
+          <br>
+          <textarea type="text" id="msj-principal"></textarea>
+      </div>
+      <div >
+        <label for="num-secreto">escribe tu numero secreto</label>
+        <br>
+        <input type="number" id="num-secreto">
+        <br>
+        <button type="button" id="btn-cifrar">cifrar</button>
+        <button type="button" id="btn-decifrar">decifrar</button>
+        <p id="tu-mensaje">tu mensaje es</p>
+        <p id="resultado"></p>
+      </div>
 
-  <div >
-    <button type='button' id='btn-cifrar'>cifrar</button>
-    <button type='button' id='btn-decifrar'>decifrar</button>
-  </div>
 </div>
-
-
-<div  id="pantalla3" style="display:none">
-  <p>tu mensaje cifrado es </p>
-  <p id='msj-cifrado'></p>
-  <button id="regresar-cifrado">Regresar</button>
-
-</div>
-<div id='pantalla4' style="display:none" >
-  <p>tu mensaje decifrado es </p>
-  <p id='msj-decifrado'></p>
-  <button id="regresar-decifrado">Regresar</button>
-
-</div>
-
-<script type="text/javascript" src="app.js"></script>
-    </body>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

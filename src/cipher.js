@@ -1,6 +1,6 @@
 const cifradoAscii =(textPrincipal,offset)=>{
-  var acum ='';
-  for(i=0;i<textPrincipal.length;i++){
+  let acum ='';
+  for(let i=0;i<textPrincipal.length;i++){
       let numAscii=textPrincipal.charCodeAt(i);
       //realizar las condiciones
        if (numAscii===32){
@@ -13,16 +13,14 @@ const cifradoAscii =(textPrincipal,offset)=>{
         else if(numAscii>=97 && numAscii<=122){
       const numDiferentMinusc = ((textPrincipal.charCodeAt(i)-97 + parseInt(offset))%26+97)-32;
            acum = acum + String.fromCharCode(numDiferentMinusc);
-         }
-        else {
-          alert('escribe un mensaje :)');
+
          }
   }
   return acum;
 };
 const decifradoAscii=(textPrincipal,offset)=>{
-  var acum ='';
-  for(i=0;i<textPrincipal.length;i++){
+  let acum ='';
+  for(let i=0;i<textPrincipal.length;i++){
       let numAscii=textPrincipal.charCodeAt(i);
       //realizar las condiciones
        if (numAscii===32){
@@ -36,13 +34,12 @@ const decifradoAscii=(textPrincipal,offset)=>{
            const numDiferentMinusc = ((textPrincipal.charCodeAt(i)-122 - parseInt(offset))%26+122)-32;
            acum = acum + String.fromCharCode(numDiferentMinusc);
          }
-       else {
-          alert('escribe un mensaje :)');
-         }
-  }
-  return acum;
 
-};
+         }
+
+  return acum;
+  }
+  /*return acum;*/
 
 window.cipher = {
 encode : cifradoAscii,
