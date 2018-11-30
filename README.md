@@ -23,8 +23,8 @@ definitivamente tendrán mayor seguridad al momento de contarlo ya que no será 
  la pagina consta de una sola pantalla donde no tendrá complicaciones de seguir avanzando sino el proceso lo hará solo ahí con el fin de facilitar la experiencia,acontinuacion le explicaremos como funciona este sencillo  proceso:
  > la pagina tiene un titulo ,luego un subtítulo donde te explica brevemente para que lo usarías y una serie de instrucciones que debes completar segun la secuencia.
 
- ![Sin titulo](imagenes/cifrado cesar.PNG)
- 
+ ![Sin titulo](imagenes/cifrado cesar.jpg)
+
  >ejemplo si deseas cifrar:
    escribes el mensaje
    colocas el número secreto
