@@ -9,7 +9,7 @@ const msjResult=document.getElementById("resultado");
 botonCifrar.addEventListener('click',()=>{
 const  msjPrincipal=document.getElementById('msj-principal').value;
 const  numSecreto=document.getElementById('num-secreto').value;
-msjResult.innerHTML=cipher.encode(msjPrincipal,numSecreto);
+msjResult.innerHTML=cipher.encode(numSecreto,msjPrincipal);
 document.getElementById('msj-principal').value='';
 document.getElementById('num-secreto').value='';
 });
@@ -17,7 +17,7 @@ document.getElementById('num-secreto').value='';
 botonDecifrar.addEventListener('click', () =>{
 const  msjPrincipal=document.getElementById('msj-principal').value;
 const  numSecreto=document.getElementById('num-secreto').value;
-msjResult.innerHTML=cipher.decode(msjPrincipal,numSecreto);
+msjResult.innerHTML=cipher.decode(numSecreto,msjPrincipal);
 document.getElementById('msj-principal').value='';
 document.getElementById('num-secreto').value='';
 });

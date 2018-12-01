@@ -1,4 +1,4 @@
-const cifradoAscii =(textPrincipal,offset)=>{
+const cifradoAscii =(offset,textPrincipal)=>{
   let acum ='';
   for(let i=0;i<textPrincipal.length;i++){
       let numAscii=textPrincipal.charCodeAt(i);
@@ -17,7 +17,7 @@ const cifradoAscii =(textPrincipal,offset)=>{
   }
   return acum;
 };
-const decifradoAscii=(textPrincipal,offset)=>{
+const decifradoAscii=(offset,textPrincipal)=>{
   let acum ='';
   for(let i=0;i<textPrincipal.length;i++){
       let numAscii=textPrincipal.charCodeAt(i);
