@@ -25,7 +25,7 @@ definitivamente tendrán mayor seguridad al momento de contarlo ya que no será 
 
 
 
-   jemplo si deseas cifrar:
+   ejemplo si deseas cifrar:
    escribes el mensaje
    colocas el número secreto
 
@@ -36,4 +36,4 @@ definitivamente tendrán mayor seguridad al momento de contarlo ya que no será 
    -para descifrar
 
 
-![sin titulo](imagenes/cifrado cesar.jpg)
+![sin titulo](imagenes/cifrado.jpg)
