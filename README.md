@@ -35,8 +35,8 @@ definitivamente tendrán mayor seguridad al momento de contarlo ya que no será 
 
   -para cifrar
 
-   ![sin titulo](imagenes/Captura3.PNG)
+ ![sin titulo](imagenes/Captura3.PNG)
 
    -para descifrar
-   
-    ![sin titulo](imagenes/Captura4.PNG)
+
+ ![sin titulo](imagenes/Captura4.PNG)
