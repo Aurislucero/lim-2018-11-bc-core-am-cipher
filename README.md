@@ -31,6 +31,7 @@ definitivamente tendrán mayor seguridad al momento de contarlo ya que no será 
    colocas el número secreto
 
    haces click en el botón cifrar y te muestra el mensaje secreto,ahora solo debes copiar el mensaje secreto y entregarle a la persona que quieres que descifre con el numero secreto y el otro usuario tendra que copiar el mensaje secreto en la parte inicial y posteriormente colocar el número,con la diferencia que ahora hará click en descifrar.
+
 ![sin titulo](imagenes/Captura2.PNG)
 
   -para cifrar
