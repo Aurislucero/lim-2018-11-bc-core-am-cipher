@@ -1,11 +1,12 @@
-body{
-  background-image: url(https://previews.123rf.com/images/studiostoks/studiostoks1606/studiostoks160600269/58843473-deux-filles-copines-comm%C3%A9rages-pop-art-r%C3%A9tro-vecteur-belles-femmes-mode-de-vie.jpg);
+.img{
+  background-image: url("https://yourchildandyou.in/wp-content/uploads/2018/10/403411-PCSCB8-777.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+/*
 .header{
-  background-color: #b3c6ff;
+  background-color: #708090;
   padding: 15px;
   text-align: center;
   font-family: cursive;
@@ -61,16 +62,13 @@ body{
   width: 100%;
   padding: 45px;
   border:2px solid ;
-  font-family:
+ 
 }
 
 #resultado{
   text-align: center;
   width: 10%;
   height: 5%
-  border: 2px solid;
-  color: white;
-  background-color: #80ced6;
 }
 .chisme{
    border-radius: 6px;
@@ -82,14 +80,14 @@ body{
   }
   .num-secreto{
     border-radius: 6px;
-   background-color: #80ced6;
+   background-color:#708090;
    padding: 5px;
    margin-left: 31%;
    margin-right: 31%;
    text-align: center;
   }
     #tu-mensaje{
-    background-color: #80ced6;
+    background-color: #708090;
     padding: 2px 2px;
     margin-left: 33%;
     margin-right: 33%;
@@ -107,4 +105,4 @@ body{
   }
   #muestraResultado{
     font-style: italic;
-  }
+  } */

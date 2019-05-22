@@ -5,53 +5,79 @@
     <title>CIFRADO ASCII</title>
     <link rel="stylesheet" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
-<body>
-  <div class="header">
-   <h1> ENCRYPT GOSSIP </h1>
- </div>
-
-  <div class="sub">
-    <p >Deseas contar o descubrir ese chisme
-    y no quieres que se enteren,estas en el lugar correcto,solo debes seguir estos pasos:</p>
-  </div>
-
-  <div class="mensaje-entrada">
-<ul>
-  <li>primero debes colocar el gossip secreto </li>
-  <li>segundo debes colocar el número secreto </li>
-  <li>Por ultimo escoge cualquiera de los dos botones segun tu preferencia</li>
-  </ul>
-</div>
-
-
-<div class="caja">
-  <div>
-      <label class="chisme" for="msj-principal"> escribe tu gossip aqui </label>
-      <br>
-      <br>
-      <textarea  id="msj-principal"></textarea>
-  </div>
-  <div >
-    <p class="num-secreto" >escribe tu numero secreto</p>
-    <input type="number" id="num-secreto">
-    <br>
-    <br>
+<body class="img">
+    
+  <div class="container">
     <div class="">
-      <button type="button" id="btn-cifrar">cifrar</button>
-      <button type="button" id="btn-decifrar">decifrar</button>
+        <div class=" text-center">
+         <h1> ENCRYPT GOSSIP </h1>
+      </div>
     </div>
-    <div class="muestraResultado">
-      <p id="tu-mensaje">tu mensaje es </p>
-      <span id="resultado"></span>
+    <div class="row">
+        <div class="section-title text-center">
+            <p >Deseas contar o descubrir ese chisme y no quieres que se enteren,estas en el lugar correcto,solo debes seguir estos pasos:</p>
+          </div>
+          <div class="">
+            <ul>
+              <li>primero debes colocar el gossip secreto </li>
+              <li>segundo debes colocar el número secreto </li>
+              <li>Por ultimo escoge cualquiera de los dos botones segun tu preferencia</li>
+            </ul>
+          </div>
     </div>
+  
+    
+    <div class="row align-items-start text-center">
+      <div class="col-md-12">
+        <div class="md-form mb-4 pink-textarea active-pink-textarea">
+            <label class="chisme" for="msj-principal"> escribe tu gossip aqui </label>
+            <textarea  id="msj-principal" class="md-textarea form-control" rows="4"></textarea>
+         
+        </div>
+    
+        <!-- <input type="range"> -->
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-12" >
+        <div class="section-title text-center">
+            <p class="num-secreto" >escribe tu numero secreto</p>
+            <input type="number" id="num-secreto">
+        </div>
+        <br>
+        <div class="section-title text-center">
+            <button type="button" class="btn btn-secondary" id="btn-cifrar">cifrar</button>
+            <button type="button" class="btn btn-secondary" id="btn-decifrar">decifrar</button>
+          </div>
+ 
+      
+      <div class="muestraResultado">
+          <div class="section-title text-center">
+        <p id="tu-mensaje">tu mensaje es </p>
+        <span id="resultado"></span>
+      </div>
+      </div>
+  
+  
+      </div>
+  </div>
+  </div>
+ 
+
+  
+
+  
 
 
-</div>
-</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <!-- para boostrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 
 </html>
